@@ -86,3 +86,7 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Vitepress
+.vitepress/dist
+.vitepress/cache
