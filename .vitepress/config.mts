@@ -39,7 +39,6 @@ export default defineConfig({
       { text: '筆記', link: '/notes' },
       { text: '速查', link: '/cheatsheets' },
       { text: '導航', link: '/awesomes' },
-      { text: '範例', link: '/examples/markdown-examples' },
     ],
 
     search: {
