@@ -1,25 +1,33 @@
 ---
-title: Python
+title: Python 相關
 ---
 
 # Python 學習筆記
 
-## 遞進
+[[toc]]
 
-( + or - or * or / )= 等加、減、乘、除
+## 指定運算子
 
-```python
+`+=`: 等加、`-=` 等減、`*=` 等乘、`/=` 等除
+
+```py:line-numbers {4}
 value = 0
 while(value<10):
     print(value)
-    value += 3           # value等差+3
+    value += 3
 
-result:
+```
+
+::: details Result
+
+```console
 0
 3
 6
 9
 ```
+
+:::
 
 ## 選擇判斷式
 
@@ -53,7 +61,7 @@ set={1,2,3}
 dict={0:1,1:2,2:3}    # key:value
 ```
 
-## Tuple Unpacking
+## 元組
 
 ```python
 Tuple=(1,2,3)
