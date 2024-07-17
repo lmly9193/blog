@@ -1,5 +1,10 @@
+---
+prev: false
+next: false
+---
+
 <script setup>
-  import { data as posts } from './index.data.ts'
+  import { data as posts } from './index.data'
 </script>
 
 <h1>All Blog Posts</h1>

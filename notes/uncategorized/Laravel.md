@@ -6,9 +6,18 @@ title: Laravel
 
 ## 建立新專案
 
-```sh
-composer create-project --prefer-dist laravel/laravel project-name
+::: code-group
+
+```shell [create-project]
+composer create-project laravel/laravel example-app
 ```
+
+```shell [laravel/installer]
+composer global require laravel/installer
+laravel new example-app
+```
+
+:::
 
 ### 設定
 

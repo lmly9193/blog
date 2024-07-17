@@ -1,6 +1,7 @@
 ---
 title: 安裝 Java SDK 8
 ---
+
 # 安裝 Java SDK 8
 
 ## 確認目前的Java版本

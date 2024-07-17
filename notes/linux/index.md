@@ -249,7 +249,7 @@ $ sudo service ssh restart
 
 ## ssh-keygen
 
-```shell
+```shell:line-numbers
 $ ssh-keygen --help
 unknown option -- -
 usage: ssh-keygen [-q] [-b bits] [-C comment] [-f output_keyfile] [-m format] [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa] [-N new_passphrase] [-O option] [-w provider]
