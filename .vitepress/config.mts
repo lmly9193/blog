@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import { zh_tw } from './locale.mts';
+import { localize } from './locale.mts';
 import { generateSidebar } from 'vitepress-sidebar';
 
 const vitepressSidebarOptions = [
@@ -22,7 +22,7 @@ const vitepressSidebarOptions = [
 ];
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineConfig(localize({
   lang: 'zh-Hant',
   title: 'lmly9193',
   description: 'A VitePress Site',
@@ -30,8 +30,6 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-
-    ...zh_tw['themeConfig'],
 
     nav: [
       { text: '首頁', link: '/' },
@@ -43,15 +41,10 @@ export default defineConfig({
 
     search: {
       provider: 'local',
-      options: {
-        locales: {
-          root: zh_tw['search'],
-        },
-      },
     },
 
     sidebar: generateSidebar(vitepressSidebarOptions),
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/lmly9193' }],
   },
-});
+}));
