@@ -1,7 +1,7 @@
 import { UserConfig, DefaultTheme } from 'vitepress';
 import { merge } from 'lodash-es';
 
-export function localize(config: UserConfig<DefaultTheme.Config>): UserConfig<DefaultTheme.Config> {
+export default function (config: UserConfig<DefaultTheme.Config>): UserConfig<DefaultTheme.Config> {
   return merge(config, {
     locales: {
       root: {
