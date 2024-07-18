@@ -1,10 +1,8 @@
 ---
-title: Python 相關
+title: Python 學習筆記
 ---
 
 # Python 學習筆記
-
-[[toc]]
 
 ## 指定運算子
 

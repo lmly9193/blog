@@ -1,53 +1,8 @@
+---
+title: 背景執行
+---
 
-## 系統本地化
-
-### 交互式
-
-```sh
-dpkg-reconfigure tzdata
-dpkg-reconfigure locales
-```
-
-### 非交互
-
-```sh
-tzselect
-echo "" >> .bashrc
-echo "export LC_ALL=zh_TW.UTF-8" >> .profile
-echo "export LANG=zh_TW.UTF-8" >> .profile
-echo "export LANGUAGE=zh_TW.UTF-8" >> .profile
-echo "export TZ='Asia/Taipei'" >> .profile
-```
-
-
-
-## sshd_config
-
-### 使用 root 登入
-
-```sh
-$ sudo -i
-
-$ passwd
-# 自行設置一個密碼
-
-$ vi /etc/ssh/sshd_config
-# change "PermitRootLogin no"->"PermitRootLogin yes"
-```
-
-### 禁止 root 登入
-
-```sh
-$ sudo vi /etc/ssh/sshd_config
-# change "PermitRootLogin yes"->"PermitRootLogin no"
-
-$ sudo service ssh restart
-# 重新啟動ssh
-
-```
-
-
-## 背景執行
+# 背景執行
 
 ```sh
 # 背景執行
@@ -56,7 +11,7 @@ nohup node server.js &> nohup.txt &
 tail –f nohup.txt
 ```
 
-### 只使用 `nohup`
+## 只使用 `nohup`
 
 ```sh
 nohup command [arg...]
@@ -64,7 +19,7 @@ nohup command [arg...]
 
 無法`標準輸入`，`標準輸出`和`錯誤訊息`輸出到`nohup.out`文件中，關閉終端機後命令仍然會運行。例如：執行`nohup sh test.sh`腳本命令後，終端機不能接收任何入、標準輸出和標準錯誤會輸入到當前目錄的`nohup.out`文件。即使關閉終端機退後，當前會話依然繼續運行。
 
-### 只使用 `&`
+## 只使用 `&`
 
 ```sh
 command [arg...] [&]
@@ -72,7 +27,7 @@ command [arg...] [&]
 
 可以`標準輸入`但無法將`標準輸出`和`錯誤訊息`輸出到`nohup.out`文件中。關閉終端機後，命令會就馬上停止。例如：執行`sh test.sh &`腳本命令後關閉終端機，對應的任務也立刻停止。
 
-### `nohup` 和 `&` 一起使用
+## `nohup` 和 `&` 一起使用
 
 ```sh
 nohup command [arg...] &
@@ -80,7 +35,7 @@ nohup command [arg...] &
 
 可以`標準輸入`，也能將`標準輸出`和`錯誤訊息`輸出到文件中`nohup.out`中，關閉終端機後命令仍然會運行。例如：執行`nohup sh test.sh &`命令後，既能`標準輸入`，也能將`標準輸出`和`錯誤訊息`輸出到`nohup.out`文件中，即使關閉終端機，當前會話依然繼續運行。
 
-### `nohup`、 `&` 、 `>`
+## `nohup`、 `&` 、 `>`
 
 ```sh
 nohup command >file 2>&1 &
