@@ -1,7 +1,4 @@
 ---
-prev: false
-next: false
+title: 筆記
+outline: false
 ---
-
-
-# 筆記

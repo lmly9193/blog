@@ -1,5 +1,12 @@
-```sh
-$ adduser --help
+---
+title: adduser
+---
+
+# adduser
+
+## 說明文件
+
+```console
 adduser [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID] [--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid ID] [--disabled-password] [--disabled-login] [--add_extra_groups] [--encrypt-home] USER
    新增一般使用者
 
@@ -24,3 +31,5 @@ general options:
   --version | -v    版本號碼和版權資訊
   --conf | -c FILE  使用 FILE 作為設定檔案
 ```
+
+## 使用範例

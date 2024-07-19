@@ -50,7 +50,7 @@ function autoSidebar() {
       useTitleFromFrontmatter: true,
       collapsed: true,
       sortMenusByName: true,
-    }
+    },
   ]);
 }
 

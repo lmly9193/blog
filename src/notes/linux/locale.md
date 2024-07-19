@@ -7,8 +7,8 @@ title: 系統本地化
 ## 交互式
 
 ```sh
-dpkg-reconfigure tzdata
 dpkg-reconfigure locales
+dpkg-reconfigure tzdata
 ```
 
 ## 非交互

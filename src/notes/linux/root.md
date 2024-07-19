@@ -4,6 +4,8 @@ title: 啟用 Root 帳號
 
 # 啟用 Root 帳號
 
+openssh-server
+
 ## 使用 root 登入
 
 ```sh

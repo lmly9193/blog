@@ -1,5 +1,12 @@
-```sh
-$ usermod --help
+---
+title: usermod
+---
+
+# usermod
+
+## 說明文件
+
+```console
 Usage: usermod [options] LOGIN
 
 Options:
@@ -29,7 +36,9 @@ Options:
   -Z, --selinux-user SEUSER     用戶帳戶的新 SELinux 用戶映射
 ```
 
-## docker without sudo
+## 使用範例
+
+### 將當前使用者加入 Docker 群組
 
 ```sh
 sudo usermod -aG docker $USER
