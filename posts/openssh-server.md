@@ -1,5 +1,8 @@
 ---
 title: 啟用 Root 帳號
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # 啟用 Root 帳號

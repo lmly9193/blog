@@ -1,5 +1,8 @@
 ---
 title: 檔案系統階層標準 (FHS)
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # 檔案系統階層標準 (FHS)

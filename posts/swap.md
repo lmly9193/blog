@@ -1,5 +1,8 @@
 ---
 title: 虛擬記憶體 (Swap)
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # 虛擬記憶體 (Swap)

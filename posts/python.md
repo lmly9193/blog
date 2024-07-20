@@ -1,5 +1,8 @@
 ---
 title: Python 學習筆記
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # Python 學習筆記

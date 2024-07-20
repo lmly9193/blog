@@ -1,5 +1,8 @@
 ---
 title: Git
+date: 2024-07-21
+tags: []
+published: false
 ---
 
 一言以蔽之: 告訴git哪些是目錄, 子目錄或文件類型的集合是屬於甚麼屬性

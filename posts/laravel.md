@@ -1,5 +1,8 @@
 ---
 title: Laravel
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # Laravel

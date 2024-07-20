@@ -1,5 +1,8 @@
 ---
 title: 常用環境變數
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # 常用環境變數

@@ -1,5 +1,8 @@
 ---
 title: 安裝 Java SDK 8
+date: 2024-07-21
+tags: []
+published: true
 ---
 
 # 安裝 Java SDK 8

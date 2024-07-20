@@ -6,7 +6,6 @@ export default defineConfig({
   lang: 'zh-Hant',
   title: 'lmly9193',
   description: 'A VitePress Site',
-  srcDir: 'src',
   lastUpdated: true,
   locales: {
     root: { label: '中文(台灣)', ...localize() },
@@ -23,7 +22,7 @@ export default defineConfig({
       },
     },
 
-    sidebar: autoSidebar(),
+    // sidebar: autoSidebar(),
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/lmly9193' }],
   },
@@ -34,7 +33,7 @@ function nav() {
   return [
     { text: '首頁', link: '/' },
     { text: '閱讀', link: '/readings' },
-    { text: '筆記', link: '/notes' },
+    { text: '筆記', link: '/posts' },
     { text: '導航', link: '/awesomes' },
   ];
 }
@@ -71,7 +70,7 @@ function localize() {
         next: '下一篇',
       },
       outline: {
-        label: '頁面導航',
+        label: '大綱',
       },
       lastUpdated: {
         text: '最後更新時間',
