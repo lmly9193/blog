@@ -1,6 +1,6 @@
 import { createContentLoader } from 'vitepress';
 
-export default createContentLoader('posts/*.md', {
+export default createContentLoader('posts/!(index).md', {
   transform(raw) {
     return raw
       .filter((item) => item.frontmatter.published !== false)

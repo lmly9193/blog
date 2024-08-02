@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress';
-import { generateSidebar } from 'vitepress-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -22,8 +21,6 @@ export default defineConfig({
       },
     },
 
-    // sidebar: autoSidebar(),
-
     socialLinks: [{ icon: 'github', link: 'https://github.com/lmly9193' }],
   },
 });
@@ -38,21 +35,6 @@ function nav() {
   ];
 }
 
-// https://vitepress.dev/reference/default-theme-sidebar
-// https://vitepress-sidebar.jooy2.com/
-function autoSidebar() {
-  return generateSidebar([
-    {
-      scanStartPath: 'src/notes',
-      resolvePath: '/notes/',
-      useFolderTitleFromIndexFile: true,
-      useTitleFromFrontmatter: true,
-      collapsed: true,
-      sortMenusByName: true,
-    },
-  ]);
-}
-
 // https://vitepress.dev/guide/i18n
 function localize() {
   return defineConfig({
@@ -63,7 +45,7 @@ function localize() {
       },
       footer: {
         message: 'MIT License',
-        copyright: `版權所有 © ${new Date().getFullYear()} lmly9193`,
+        copyright: `版權所有 &copy; ${new Date().getFullYear()} lmly9193`,
       },
       docFooter: {
         prev: '上一篇',
