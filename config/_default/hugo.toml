@@ -7,8 +7,9 @@ theme = "blowfish"
 baseURL = "https://blog.lmly9193.dev/"
 defaultContentLanguage = "zh-tw"
 
-
-# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+# hugo function useful for non-english languages,
+# find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+pluralizeListTitles = "true"
 
 enableRobotsTXT = true
 paginate = 10
