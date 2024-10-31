@@ -3,7 +3,7 @@ title: "比較 Linux 不同的背景執行方法"
 date: "2024-10-30T17:50:19+08:00"
 draft: false
 slug: "nohup-compared"
-tags: ["Linux", "Terminal"]
+tags: ["Linux", "Trick"]
 ---
 
 ```sh
